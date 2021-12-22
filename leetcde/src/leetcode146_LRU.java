@@ -3,7 +3,7 @@ import java.util.HashMap;
 /**
  * @author mashenglin
  */
-public class LRU {
+public class leetcode146_LRU {
         HashMap<Integer,Node> map;
         DoubleLinkedList cache;
         int cap;
@@ -11,7 +11,7 @@ public class LRU {
     /**
      * 构造方法
      */
-    public LRU(int cap){
+    public leetcode146_LRU(int cap){
         map=new HashMap<>();
         cache=new DoubleLinkedList();
         this.cap=cap;
@@ -154,7 +154,7 @@ public class LRU {
        }
 
     public static void main(String[] args) {
-        LRU lRUCache = new LRU(2);
+        leetcode146_LRU lRUCache = new leetcode146_LRU(2);
         lRUCache.put(1, 1); // 缓存是 {1=1}
         lRUCache.put(2, 2); // 缓存是 {1=1, 2=2}
         System.out.println(lRUCache.get(1));   // 返回 1
